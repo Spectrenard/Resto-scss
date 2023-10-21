@@ -1,0 +1,141 @@
+header {
+  height: 90vh;
+
+  @media screen and (max-width: 600px) {
+    height: 100vh;
+  }
+  nav {
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    display: flex;
+
+    @media screen and (max-width: 1000px) {
+    }
+    h3 {
+      text-align: center;
+      align-items: center;
+      justify-content: center;
+      font-family: $font1;
+      color: $white;
+      font-size: 3rem;
+      padding: 10px 70px;
+
+      @media screen and (max-width: 1000px) {
+        padding: 10px 30px;
+      }
+
+      @media screen and (max-width: 600px) {
+        padding-top: 20px;
+        padding-right: 130px;
+      }
+    }
+    .text-part {
+      display: flex;
+      color: white;
+    }
+    ul {
+      display: flex;
+
+      @media screen and (max-width: 600px) {
+        display: none;
+      }
+      li {
+        display: flex;
+        font-family: $font3;
+        text-transform: uppercase;
+        font-size: 0.9rem;
+        align-items: center;
+        padding: 30px 40px;
+        transition: 0.3s;
+
+        &:hover {
+          color: $yellow;
+        }
+        @media screen and (max-width: 1000px) {
+          font-size: 0.7rem;
+          padding: 30px 20px;
+        }
+      }
+    }
+  }
+
+  .logo-part {
+    color: white;
+
+    ul {
+      padding-left: 20px;
+      display: flex;
+
+      @media screen and (max-width: 1000px) {
+        padding-left: 0px;
+      }
+
+      i {
+        padding: 0 5px;
+        transition: 0.2s;
+
+        &:hover {
+          font-size: 1.3rem;
+          color: $yellow;
+        }
+
+        @media screen and (max-width: 600px) {
+          font-size: 1.1rem;
+          padding: 0px;
+        }
+      }
+    }
+  }
+}
+
+.header-main {
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+
+  h2 {
+    padding-top: 170px;
+    font-family: $font1;
+    color: $yellow;
+    font-weight: 400;
+    font-size: 3rem;
+
+    @media screen and (max-width: 600px) {
+      font-size: 2.5rem;
+    }
+  }
+  h1 {
+    color: white;
+    font-family: $font2;
+    font-size: 3.5rem;
+    letter-spacing: 10px;
+    transform: translateY(-30px);
+
+    @media screen and (max-width: 600px) {
+      font-size: 3rem;
+      transform: translateY(10px);
+    }
+  }
+
+  img {
+    height: 30px;
+
+    @media screen and (max-width: 600px) {
+      margin-top: 30px;
+    }
+  }
+
+  p {
+    padding-top: 40px;
+    font-family: $font3;
+    color: white;
+    text-transform: uppercase;
+    font-size: 0.9rem;
+    letter-spacing: 10px;
+
+    @media screen and (max-width: 600px) {
+      padding-top: 30px;
+    }
+  }
+}

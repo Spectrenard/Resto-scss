@@ -1,0 +1,37 @@
+@font-face {
+  font-family: "allura-regular";
+  src: url(../fonts/Allura-Regular.ttf);
+}
+
+@font-face {
+  font-family: "poppins-medium";
+  src: url(../fonts/Poppins-Medium.ttf);
+}
+
+@font-face {
+  font-family: "roboto-light";
+  src: url(../fonts/Roboto-Light.ttf);
+}
+
+$font1: allura-regular, sans-serif;
+$font2: poppins-medium, sans-serif;
+$font3: roboto-light, sans-serif;
+$yellow: rgb(159, 127, 84);
+$white: white;
+$grey1: rgb(87, 86, 86);
+$grey2: rgb(121, 121, 121);
+$grey3: rgb(176, 171, 171);
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+li {
+  list-style: none;
+}
+
+header {
+  background: url(../img/bg-slider-06.jpg) center/cover;
+}

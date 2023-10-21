@@ -1,0 +1,129 @@
+.section-3 {
+  background-color: rgb(45, 45, 45);
+  padding: 210px 15px 65px;
+  color: white;
+
+  .reserv-container {
+    display: grid;
+    grid-template-columns: 30% 70%;
+    background: white;
+    max-width: 1200px;
+    margin: 0 auto;
+
+    @media screen and (max-width: 600px) {
+      display: block;
+    }
+
+    .hours-part {
+      padding: 25px;
+      background: black;
+
+      .hours-detail {
+        align-items: center;
+        text-align: center;
+        border: 1px dashed grey;
+        padding: 20px 0;
+
+        h3 {
+          font-family: $font1;
+          font-size: 2.5rem;
+          color: $yellow;
+          font-weight: 100;
+        }
+
+        h2 {
+          font-family: $font2;
+          margin-top: -16px;
+          letter-spacing: 2px;
+          font-size: 1.3rem;
+        }
+
+        img {
+          margin-top: 25px;
+        }
+
+        h5 {
+          text-transform: uppercase;
+          color: $yellow;
+          font-family: $font2;
+          font-weight: 100;
+          font-size: 1.1rem;
+          margin: 38px 0 12px;
+        }
+
+        p {
+          font-family: $font3;
+          font-size: 0.85rem;
+        }
+      }
+    }
+    .reservation-part {
+      align-items: center;
+      text-align: center;
+
+      @media screen and (max-width: 600px) {
+        grid-template-columns: 1fr;
+      }
+      h3 {
+        padding-top: 60px;
+        font-family: $font1;
+        color: $yellow;
+        font-size: 3rem;
+        font-weight: 500;
+      }
+
+      h2 {
+        color: black;
+        font-family: $font2;
+        text-transform: uppercase;
+        font-size: 2.2rem;
+        margin-top: -25px;
+      }
+
+      img {
+        height: 25px;
+        margin: 25px;
+      }
+
+      .form-inputs {
+        padding: 0 120px;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        margin-bottom: 30px;
+
+        @media screen and (max-width: 600px) {
+          grid-template-columns: 1fr;
+        }
+
+        > * {
+          padding: 10px 0;
+          margin: 10px;
+          background: none;
+          outline: none;
+          border: none;
+          border-bottom: 1px solid gray;
+        }
+      }
+
+      button {
+        border: none;
+        border-radius: 50px;
+        background: black;
+        color: white;
+        padding: 16px 34px;
+        letter-spacing: 4px;
+        font-weight: 700;
+        cursor: pointer;
+        transition: 0.2s;
+
+        @media screen and (max-width: 600px) {
+          margin-bottom: 50px;
+        }
+
+        &:hover {
+          transform: translateX(3px);
+        }
+      }
+    }
+  }
+}
